@@ -20,7 +20,13 @@ static int CalculateAverage(int[] numbers)
 
 static int FindMaximum(int[] numbers)
 {
-    int max = 0;
-
+    int max = numbers[0];
+    for (int i = 1; i <= numbers.Length-1; i++)
+    {
+        if (numbers[i] > max)
+        {
+            max = numbers[i];
+        }
+    }
     return max;
 }
