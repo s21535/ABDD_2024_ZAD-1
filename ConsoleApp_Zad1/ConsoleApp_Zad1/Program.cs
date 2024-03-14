@@ -10,9 +10,9 @@ Console.WriteLine("Modification 3");
 static int CalculateAverage(int[] numbers)
 {
     int sum = 0, average = 0;
-    for (int i = 0; i <= numbers.Length-1; i++)
+    for (int k = 0; k <= numbers.Length-1; k++)
     {
-        sum = sum + numbers[i];
+        sum = sum + numbers[k];
     }
     average = sum / (numbers.Length-1);
     return average;
